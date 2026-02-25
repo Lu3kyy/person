@@ -6,10 +6,14 @@ type ProfileCardProps = {
 
 export default function ProfileCard({ name, bio, image }: ProfileCardProps) {
   return (
-    <div>
-      <img src={image} alt={name} style={{ width: '150px', borderRadius: '8px' }} />
-      <h2>{name}</h2>
-      <p>{bio}</p>
+    <div className="flex flex-col items-center text-center">
+      <img
+        src={image}
+        alt={name}
+        className="mx-auto w-37.5 rounded-lg"
+      />
+      <h2 className="mt-4 text-2xl font-semibold">{name}</h2>
+      <p className="mt-1 text-base">{bio}</p>
     </div>
   );
 }
