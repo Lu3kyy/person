@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+
+//easy nav
 const NavLinks = () => {
   return (
       <nav style={{ display: 'flex', gap: '20px', padding: '10px' }}>
